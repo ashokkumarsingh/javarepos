@@ -1,0 +1,17 @@
+public class MyTestClass
+{
+private int n,m;
+public static void main(String s[])
+{
+  MyTestClass mtc=new MyTestClass(3,5);
+  mtc.show();
+}
+MyTestClass()
+{
+n=0;m-0;
+}
+
+MyTestClass(int a, int b){ n=a;m=b;}
+public void show(){System.out.println("O/P:" + (n+m));}
+
+}
