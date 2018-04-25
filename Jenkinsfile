@@ -11,6 +11,8 @@ pipeline {
       steps {
         echo 'Build First Step'
         echo 'Build Step-2'
+        bat 'mvn clean package'
+        echo 'Code is compiled and JAR created'
       }
     }
     stage('Test') {
@@ -23,5 +25,9 @@ pipeline {
         echo 'Deploye Msg1'
       }
     }
+  }
+  environment {
+    JAVA_HOME = 'C:\\Program Files\\Java\\jdk1.8.0_144'
+    MAVEN_HOME = 'D:\\apache-maven-3.5.3'
   }
 }
